@@ -22,6 +22,11 @@ bool solve(int maze[n][n])
     return true;
 }
 
+bool isOnMaze(int maze[n][n], int x, int y)
+{
+    return (x >= 0 && x < n && y >= 0 && y < n && maze[x][y] == 1);
+}
+
 bool isFound(int maze[n][n], int x, int y, int result[n][n])
 {
     //Goal Case
