@@ -2,6 +2,20 @@
 using namespace std;
 #define n 4
 
+bool isFound(int maze[n][n], int x, int y, int result[n][n]);
+
+void printMaze(int maze[n][n])
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cout << maze[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+
 bool solve(int maze[n][n])
 {
     int result[n][n] = {
